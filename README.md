@@ -58,6 +58,8 @@ npm run build
 
 Built with ❤️ and lots of caffeine.
 
+⭐ **Give me my stars** ⭐
+
 ## Disclaimer
 
 I didn't write the code so don't blame me for bugs and mistakes. It's all on Claude and GitHub Copilot. 🤖 
