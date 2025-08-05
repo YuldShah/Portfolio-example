@@ -1,8 +1,16 @@
 # Portfolio Example
 
-This is a copy of the [Athos Dark template](https://www.framer.com/marketplace/templates/athos-dark/) from Framer's marketplace.
+This is a implementation of the [Athos Dark template](https://www.framer.com/marketplace/templates/athos-dark/) from Framer's marketplace (Couldn't export the code from Framer, decided to code it myself).
 
 **Built with pure vibes in a single day.** 🚀
+
+## Screenshots
+
+![Portfolio Hero Section](public/screenshots/image.png)
+*Hero section with animated nebula background and smooth scroll animations*
+
+![Portfolio Components](public/screenshots/image1.png)
+*Case studies stacking, interactive hire button, and glassmorphism UI elements*
 
 ## Tech Stack
 
@@ -60,3 +68,6 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+# I didn't write the code so don't blame me for bugs and mistakes. It's all on Claude and Github Copilot. 
