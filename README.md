@@ -6,10 +6,10 @@ This is a implementation of the [Athos Dark template](https://www.framer.com/mar
 
 ## Screenshots
 
-![Portfolio Hero Section](public/screenshots/image.png)
+![Portfolio Hero Section](https://raw.githubusercontent.com/YuldShah/Portfolio-example/main/public/screenshots/image.png)
 *Hero section with animated nebula background and smooth scroll animations*
 
-![Portfolio Components](public/screenshots/image1.png)
+![Portfolio Components](https://raw.githubusercontent.com/YuldShah/Portfolio-example/main/public/screenshots/image1.png)
 *Case studies stacking, interactive hire button, and glassmorphism UI elements*
 
 ## Tech Stack
@@ -56,18 +56,8 @@ npm run build
 - **FAQ** - Collapsible questions
 - **HireMeButton** - Interactive CTA with work samples
 
-Built with ❤️ and lots of caffeine.+ Vite
+Built with ❤️ and lots of caffeine.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Disclaimer
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-
-# I didn't write the code so don't blame me for bugs and mistakes. It's all on Claude and Github Copilot. 
+I didn't write the code so don't blame me for bugs and mistakes. It's all on Claude and GitHub Copilot. 🤖 
