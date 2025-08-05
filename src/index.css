@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth font rendering and dark theme base */
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-black text-zinc-200 antialiased;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.01) 1px, transparent 0);
+  background-size: 20px 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Glass card */
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10;
+}
+
+/* Rounded cards */
+.card {
+  @apply glass rounded-3xl;
+}
+
+/* Running stroke button animation */
+.running-stroke {
+  position: relative;
+  background: black;
+  border: 1px solid rgba(135, 206, 250, 0.6);
+  border-radius: 9999px;
+  box-shadow: 
+    0 0 10px rgba(135, 206, 250, 0.3),
+    0 0 20px rgba(135, 206, 250, 0.2),
+    0 0 30px rgba(135, 206, 250, 0.1);
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 5px rgba(135, 206, 250, 0.3),
+      0 0 10px rgba(135, 206, 250, 0.2),
+      0 0 15px rgba(135, 206, 250, 0.1);
+    border-color: rgba(135, 206, 250, 0.6);
+  }
+  50% {
+    box-shadow: 
+      0 0 15px rgba(135, 206, 250, 0.5),
+      0 0 25px rgba(135, 206, 250, 0.3),
+      0 0 35px rgba(135, 206, 250, 0.2);
+    border-color: rgba(135, 206, 250, 0.9);
+  }
+}
+
+/* Logo row scrolling animation */
+.logo-container {
+  position: relative;
+  overflow: hidden;
+  mask: linear-gradient(to right, transparent, white 100px, white calc(100% - 100px), transparent);
+  -webkit-mask: linear-gradient(to right, transparent, white 100px, white calc(100% - 100px), transparent);
+}
+
+.logo-scroll {
+  animation: scrollRightToLeft 20s linear infinite;
+  animation-play-state: running;
+}
+
+.logo-container:hover .logo-scroll {
+  animation-duration: 60s;
+}
+
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Case study stacking styles */
+.case-study-item {
+  position: sticky;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 50px;
+  transform-origin: top center;
+}
+
+.case-study-item:nth-child(1) { 
+  top: 120px; 
+  z-index: 1;
+  margin-top: 0;
+}
+.case-study-item:nth-child(2) { 
+  top: 100px; 
+  z-index: 2;
+  margin-top: -50px;
+}
+.case-study-item:nth-child(3) { 
+  top: 80px; 
+  z-index: 3;
+  margin-top: -50px;
+}
+.case-study-item:nth-child(4) { 
+  top: 60px; 
+  z-index: 4;
+  margin-top: -50px;
+}
+
+.case-study-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Enhanced glow effects for case study images */
+.glow-red {
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
+}
+
+.glow-blue {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+}
+
+.glow-green {
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.15) 0%, transparent 70%);
+}
+
+.glow-purple {
+  background: radial-gradient(circle, rgba(147, 51, 234, 0.15) 0%, transparent 70%);
+}
+
+/* Hire Me Button Styles */
+.hire-me-container {
+  min-width: 900px;
+  min-height: 350px;
+  box-shadow: 
+    0 0 40px rgba(0, 0, 0, 0.3),
+    0 0 80px rgba(0, 0, 0, 0.2);
+}
+
+.hire-me-button {
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    0 2px 6px rgba(0, 0, 0, 0.2);
+}
